@@ -466,8 +466,8 @@ int edit_account(struct session *session,
 	if (notes_expansion) {
 		notes_collapsed = editable;
 		editable = notes_expansion;
-	} else if (choice == EDIT_FIELD)
-		die("Editing fields of entries that are not secure notes is currently not supported.");
+	} /* else if (choice == EDIT_FIELD)
+		die("Editing fields of entries that are not secure notes is currently not supported."); */
 
 	switch(choice)
 	{
